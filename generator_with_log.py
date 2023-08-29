@@ -26,7 +26,6 @@ while True:
     mnemonic_word_list = mnemonic_words.split()
 
     # Print the generated mnemonic
-    # print("Generated Mnemonic:")
     print(" ".join(mnemonic_word_list))
 
     # Save the output as 'record.txt' (use it with caution since leaking this file your seed will be compromised)
