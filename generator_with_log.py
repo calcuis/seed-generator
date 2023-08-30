@@ -23,14 +23,14 @@ while True:
     mnemonic_words = mnemonic.Mnemonic(language).to_mnemonic(seed)
 
     # Split the mnemonic into individual words
-    mnemonic_word_list = mnemonic_words.split()
+    mnemonic_word_list = " ".join(mnemonic_words.split())
 
     # Print the generated mnemonic
-    print(" ".join(mnemonic_word_list))
+    print(mnemonic_word_list)
 
     # Save the output as 'record.txt' (use it with caution since leaking this file your seed will be compromised)
     f=open('record.txt', 'a')
-    f.write(" ".join(mnemonic_word_list))
+    f.write(mnemonic_word_list)
     f.write("\n")
     f.close()
 
