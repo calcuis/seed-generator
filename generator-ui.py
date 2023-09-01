@@ -6,7 +6,7 @@ class MyApp(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Geneartor") # title
+        self.setWindowTitle("Generator") # title
         self.setWindowIcon(QIcon("logo.ico")) # logo
         self.resize(600, 80) # width, height
 
