@@ -17,7 +17,6 @@ class MyApp(QWidget):
         self.label = QLabel("How many words in your mnemonic? (12, 15, 18, 21 or 24)")
         self.inputField = QLineEdit()
         button = QPushButton("&Generate", clicked=self.generateSeed)
-        # button.clicked.connect(self.generateSeed) # don't need this line in PyQt6
         buttonExit = QPushButton("&Exit", clicked=self.exitApp)
         self.output = QTextEdit()
 
